@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Institute Dashboard</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="profile.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+
+      background: #f7f9fc;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .search-bar {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 300px;
+      font-size: 16px;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+    }
+
+    .applicant {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #fff;
+      margin-bottom: 20px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+      transition: 0.3s ease-in-out;
+    }
+
+    .applicant-header {
+      background: #0d6efd;
+      color: white;
+      padding: 15px 20px;
+      font-weight: bold;
+      font-size: 17px;
+      cursor: pointer;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+    #applicantContainer{
+      padding: 20px 100px;
+    }
+
+    .applicant-body {
+      display: none;
+      padding: 20px;
+      border-top: 1px solid #ccc;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background: #f0f0f0;
+    }
+
+    h3 {
+      color: #0d6efd;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    .pdf-button {
+      float: right;
+      margin-top: 10px;
+      padding: 8px 14px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .pdf-button:hover {
+      background-color: #218838;
+    }
+  </style>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="navbar1">
+    <div class="img-navbar">
+      <h1 style="font-size: 28PX; margin-top: 30px;"> SCHOLARSHIP</h1>
+    </div>
+    <div class="navbar1-box1">
+      <p class="para1"><i class="fa-solid fa-square-phone fa-2xl"
+          style=" color: #FFD43B; position: relative; top: 10px; "></i> &ensp;Helpline Number <br>&emsp;&emsp;
+        &emsp;8799889799</p>
+    </div>
+    <div class="navbar1-box2">
+      <p class="para1"><i class="fa-solid fa-square-phone fa-2xl"
+          style=" color: #FFD43B; position: relative; top: 10px; "></i> &ensp;Chief Minister Helpline
+        <br>&emsp;&emsp; &emsp;1800&nbsp;120&nbsp;&8040
+      </p>
+    </div>
+    <div class="button-bar">
+      <button class="profile"> Profile</button>
+    </div>
+  </div>
+  <!--Second navbar start-->
+
+  <div>
+    <div class="navbar2">
+
+      <div class="navbar2-box1">
+        <a href="index.html">
+          <p class="para6">
+            <i class="fa-solid fa-house"></i>&ensp;Home
+          </p>
+        </a>
+      </div>
+      <div class="navbar2-box2">
+        <a href="new_applicant_registration.html">
+          <p class="para6"><i class="fa-regular fa-pen-to-square"></i>
+            New Applicant <br> &ensp;&ensp; Registration
+          </p>
+        </a>
+      </div>
+      <div class="navbar2-box3">
+        <a href="login_form.html">
+          <p class="para6">
+            <i class="fa-solid fa-unlock"></i> &ensp;Applicant Login
+          </p>
+        </a>
+      </div>
+      <div class="navbar2-box4">
+        <a href="institue_dept_ddo.html">
+          <p class="para6">
+            <i class="fa-solid fa-building-columns"></i> &ensp;Institue / Dept <br>&ensp;&ensp;&ensp;&ensp;/
+            DDO Login
+          </p>
+        </a>
+      </div>
+      <div class="navbar2-box5">
+        <a href="Grievance_Suggestions.html">
+          <p class="para6">
+            &emsp;&ensp;<i class="fa-solid fa-comment-dots"></i> &ensp; Grievance &emsp;&emsp;&ensp;/
+            Suggestions
+          </p>
+        </a>
+      </div>
+      <div class="navbar2-box6">
+        &emsp;<p class="para6"><i class="fa-solid fa-file-lines"></i> &ensp; User Manuals</p>
+      </div>
+      <div class="navbar2-box7">
+        <a href="FAQ.html">
+          <p class="para6">
+            <i class="fa-regular fa-comments"></i>&ensp;FAQ
+          </p>
+        </a>
+      </div>
+    </div>
+
+
+  </div><br><br>
+  <h1>Institute Dashboard</h1>
+
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search by Application Number..." onkeyup="filterApplicants()" />
+  </div>
+
+  <div id="applicantContainer"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script>
+    async function fetchApplicants() {
+      const res = await fetch('/fetch_all_applicants');
+      const applicants = await res.json();
+
+      const container = document.getElementById('applicantContainer');
+      container.innerHTML = "";
+
+      applicants.forEach((data, index) => {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'applicant';
+        wrapper.setAttribute('data-app', data.personal?.applicationNumber || "");
+
+        const header = document.createElement('div');
+        header.className = 'applicant-header';
+        header.textContent = `Application: ${data.personal?.applicationNumber || "N/A"} - ${data.personal?.Full_name_as_per_aadhar_card || ""}`;
+        header.onclick = () => {
+          body.style.display = body.style.display === 'block' ? 'none' : 'block';
+        };
+
+        const body = document.createElement('div');
+        body.className = 'applicant-body';
+
+        const makeTable = (title, obj) => {
+          if (!obj) return '';
+          let rows = Object.entries(obj).map(([k, v]) => `<tr><th>${k}</th><td>${v}</td></tr>`).join('');
+          return `<h3>${title}</h3><table>${rows}</table>`;
+        };
+
+        body.innerHTML = `
+          ${makeTable('Personal Information', data.personal)}
+          ${makeTable('Address Information', data.address)}
+          ${makeTable('Other Information', data.other)}
+          ${makeTable('Course Information', data.course)}
+          ${makeTable('Past Qualification', data.past)}
+          ${data.grievance ? makeTable('Grievance/Suggestion', data.grievance) : ''}
+          <button class="pdf-button" onclick="exportToPDF(${index})">Export to PDF</button>
+        `;
+
+        wrapper.appendChild(header);
+        wrapper.appendChild(body);
+        container.appendChild(wrapper);
+      });
+    }
+
+    function filterApplicants() {
+      const query = document.getElementById('searchInput').value.toUpperCase();
+      document.querySelectorAll('.applicant').forEach(app => {
+        const appNum = app.getAttribute('data-app').toUpperCase();
+        app.style.display = appNum.includes(query) ? '' : 'none';
+      });
+    }
+
+    function exportToPDF(index) {
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF();
+      const body = document.getElementsByClassName('applicant-body')[index];
+      doc.text(body.innerText, 10, 10);
+      doc.save(`application_${index + 1}.pdf`);
+    }
+
+    fetchApplicants();
+  </script>
+</body>
+
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Institute Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px 100px;
+      background: #f7f9fc;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .search-bar {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 300px;
+      font-size: 16px;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+    }
+
+    .applicant {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #fff;
+      margin-bottom: 20px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      transition: 0.3s ease-in-out;
+    }
+
+    .applicant-header {
+      background: #0d6efd;
+      color: white;
+      padding: 15px 20px;
+      font-weight: bold;
+      font-size: 17px;
+      cursor: pointer;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    .applicant-body {
+      display: none;
+      padding: 20px;
+      border-top: 1px solid #ccc;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      table-layout: fixed;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #ddd;
+      word-wrap: break-word;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f0f0f0;
+      width: 20%;
+    }
+
+    td {
+      width: 30%;
+    }
+
+    h3 {
+      color: #0d6efd;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    .pdf-button {
+      float: right;
+      margin-top: 10px;
+      padding: 8px 14px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .pdf-button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <h1>Institute Dashboard</h1>
+
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search by Application Number..." onkeyup="filterApplicants()" />
+  </div>
+
+  <div id="applicantContainer"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script>
+    const labelMap = {
+      applicationNumber: "Application Number",
+      Aadhar_Number: "Aadhar Number",
+      DOB: "Date of Birth (As per Aadhar)",
+      Age: "Age",
+      Parents_Guardian_Mobile_No: "Parent's/Guardian Mobile No",
+      Full_name_as_per_aadhar_card: "Full Name (As Per SSC Marksheet/ L.C.)",
+      Marital_Status: "Marital Status",
+      Religion: "Religion",
+      Cast_Category: "Caste Category",
+      Family_Annual_Income: "Family Annual Income",
+      Are_you_Salaried: "Are you Salaried?",
+      Disability_Type: "Disability of any Type?",
+      Bank_Account_No: "Bank Account No.",
+      IFSC_Code: "IFSC Code",
+      Branch_Name: "Branch Name",
+      Have_Caste_Certificate: "Do you have Caste Certificate?",
+      Have_Income_Certificate: "Do you have Income Certificate?",
+      // Add more friendly labels if needed
+    };
+
+    const excludeFields = ['_id', '__v', 'createdAt', 'updatedAt'];
+
+    const makeTable = (title, obj) => {
+      if (!obj) return '';
+      const entries = Object.entries(obj).filter(([key]) => !excludeFields.includes(key));
+      let rows = '';
+
+      for (let i = 0; i < entries.length; i += 2) {
+        const [k1, v1] = entries[i];
+        const [k2, v2] = entries[i + 1] || ['', ''];
+
+        rows += `
+          <tr>
+            <th>${labelMap[k1] || k1}</th><td>${v1}</td>
+            <th>${labelMap[k2] || k2}</th><td>${v2}</td>
+          </tr>`;
+      }
+
+      return `
+        <h3>${title}</h3>
+        <table><tbody>${rows}</tbody></table>`;
+    };
+
+    async function fetchApplicants() {
+      const res = await fetch('/fetch_all_applicants');
+      const applicants = await res.json();
+
+      const container = document.getElementById('applicantContainer');
+      container.innerHTML = "";
+
+      applicants.forEach((data, index) => {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'applicant';
+        wrapper.setAttribute('data-app', data.personal?.applicationNumber || "");
+
+        const header = document.createElement('div');
+        header.className = 'applicant-header';
+        header.textContent = `Application: ${data.personal?.applicationNumber || "N/A"} - ${data.personal?.Full_name_as_per_aadhar_card || ""}`;
+        header.onclick = () => {
+          body.style.display = body.style.display === 'block' ? 'none' : 'block';
+        };
+
+        const body = document.createElement('div');
+        body.className = 'applicant-body';
+
+        body.innerHTML = `
+          ${makeTable('1) Personal Information', data.personal)}
+          ${makeTable('2) Address Information', data.address)}
+          ${makeTable('3) Other Information', data.other)}
+          ${makeTable('4) Course Information', data.course)}
+          ${makeTable('5) Past Qualification', data.past)}
+          ${data.grievance ? makeTable('6) Grievance/Suggestion', data.grievance) : ''}
+          <button class="pdf-button" onclick="exportToPDF(${index})">Export to PDF</button>
+        `;
+
+        wrapper.appendChild(header);
+        wrapper.appendChild(body);
+        container.appendChild(wrapper);
+      });
+    }
+
+    function filterApplicants() {
+      const query = document.getElementById('searchInput').value.toUpperCase();
+      document.querySelectorAll('.applicant').forEach(app => {
+        const appNum = app.getAttribute('data-app').toUpperCase();
+        app.style.display = appNum.includes(query) ? '' : 'none';
+      });
+    }
+
+    function exportToPDF(index) {
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF();
+      const body = document.getElementsByClassName('applicant-body')[index];
+      doc.text(body.innerText, 10, 10);
+      doc.save(`application_${index + 1}.pdf`);
+    }
+
+    fetchApplicants();
+  </script>
+</body>
+</html> -->

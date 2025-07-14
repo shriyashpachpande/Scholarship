@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, <initial-scale=1">
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="loginformstyle.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title> Payment details 
+    </title>
+  </head>
+
+  <body>
+    <div class="div1">
+
+    <table style="width: 100%">
+      <tr>
+        <th style="width: 10%"></th>
+        <th style="width: 90%"></th>
+      </tr>
+      <tr>
+        <td> <img height="90px", width="200px" src="https://th.bing.com/th/id/OIP.IWEChHPqz4h9AenMOug0bgHaDv?w=327&h=177&c=7&r=0&o=5&dpr=1.3&pid=1.7"></td>
+        <td> <div class="div4">SBI Collect </div></td>
+      </tr>
+    </table>
+    <div class="homee">
+      <a href="/1stpage.html" class="a1">HOME</a> 
+      <a href="/transition.html" style="padding-left: 30px;" class="a2">TRANSACTION HISTORY</a>
+      <a href="https://www.onlinesbi.sbi/sbicollect/faq/faq.htm"style="padding-left: 30px;" class="a3">FAQ'S</a>
+      <a href="https://www.onlinesbi.sbi/sbicollect/customersupport/customersupport.htm" style="padding-left: 30px;" class="a4">CUSTOMER SUPPORT</a>
+    </div>
+    <br><br><br>
+    <form>
+    <div>
+      &emsp;<img src="/payment22.png" class="div6" >
+    </div>
+    
+
+
+    <br><br><br>
+    <div class="div7">
+
+
+    <form action="PayslipServlet" method="get">
+      <br><br>
+    <b> Enter Payment Details </b> <br>
+
+      <table style="width: 100%;" class="table" >
+        <tr>
+          <th style="width: 20%;"></th>
+          <th style="width: 25%;"></th>
+          <th style="width: 25%;"></th>
+          <th style="width: 25%;"></th>
+        </tr>
+        <tr>
+          <td><b> Student ID :</b> </td>
+          <td><input type="text" placeholder="Student ID" id="one1" class="page"></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><b> Student Full Name :</b> </td>
+          <td><input type="text" placeholder="First Name " id="one2" class="page"></td>
+          <td><input type="text" placeholder="Middle Name" id="one3" class="page"></td>
+          <td><input type="text" placeholder="Last Name" id="one4" class="page"> </td>
+        </tr>
+        <tr>
+          <td><b> Class :</b></td>
+          <td><select class="page" id="one5">
+            <option> -Select Class -</option>
+            <option value="FE" > FE</option>
+            <option value="SE"> SE</option>
+            <option value="TE"> TE</option>
+            <option value="BE">BE</option>
+            <option value="ME-I"> ME-I</option>
+          </select></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><b> Select Branch:</b></td>
+          <td><select class="page" id="one6"> 
+            <option> -select branch -</option>
+            <option value="civil engineering">civil engineering </option>
+            <option value="computer science and engineering ">computer science and engineering </option>
+            <option value="Mechanical engineering">Mechanical Engineering </option>
+            <option value="electronic and telecommunication Engineering">electronic and telecommunication engineering </option>
+            <option value="information technology ">information technology </option>
+          </select></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><b> Mobile number :</b></td>
+          <td><input type="tel" placeholder="+91 88300*****" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required id="one7" class="page"></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td> <b>Parent Mobile Number :</b></td>
+          <td><input type="tel" placeholder="+91 88300*****" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required id="one8" class="page"> </td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><b> Fees in Rs :</b></td>
+          <td><input type="text" placeholder="Rs" id="one9" class="page"></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><b>Remarks : </b></td>
+          <td><input type="text" placeholder="Feedback" id="one10" class="page"></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><b> Enter your details:</b></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><label for="radio11">
+            &emsp;<input type="radio" value="Individual" name="form" id="radio11" class="page"> <b>Individual</b>
+            </label></td>
+          <td><label for="radio12">
+            &emsp;<input type="radio" value="Organisation" name="form" id="radio12" class="page"> <b>Organisations </b>
+            </label></td>
+          <td></td>
+          <td></td>  
+        </tr>
+        <tr>
+          <td><b>Name :</b></td>
+          <td><input type="text" placeholder="First Name " id="one13" class="page" ></td>
+          <td><input type="text" placeholder="Middle Name" id="one14" class="page"></td>
+          <td><input type="text" placeholder="Last Name" id="one15" class="page"></td>
+        </tr>
+        <tr>
+          <td><b> Date of birth :</b></td>
+          <td><input type="date" placeholder="[DD/MM/YYYY]" id="one16" class="page"></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td> <b> Mobile number :</b> </td>
+          <td><input type="tel" placeholder="+91 88300*****" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required id="one17" class="page">   </td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><b>Parent Mobile Number :</b> </td>
+          <td><input type="tel" placeholder="+91 88300*****" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="page" required id="one18"></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><b>Email Id :</b></td>
+          <td><input type="email" placeholder="xyzabc@gmail.com"name="email" required id="one19" class="page"> </td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><b> Parent Email id :</b> </td>
+          <td><input type="email" placeholder="xyzabc@gmail.com" name="email" required id="one20" class="page"> </td>
+          <td></td>
+          <td></td>
+        </tr>
+
+      </table>
+    
+    </div>
+    <br><br><br>
+    <div class="div9">
+    <input type="checkbox" value="done" name="sp1"><b>I have read and agreed to the terms and conditions</b>
+    </div>
+   
+   <p style="text-align:center;"> <a href="/categary.html"><input type="button" value="Go Back" id="button" class="shriyash1"></a>&emsp;&emsp;<input type="reset" value="Reset" id="button" class="shriyash1">&emsp;&emsp;<input type="button" value="Submit" id="button" class="shriyash1" onclick="pr()"></a></p>
+   
+   <span id="result"></span>
+   <p id="two"> © State Bank of India </p>
+
+   <p style=" text-align: center; font-size: 20px;">
+  <a href="https://www.onlinesbi.sbi/sbijava/sbcollectrevamp/Privacy_Statement.html" target="_main" class="a5">Privacy Statement</a>
+   &emsp; <a href="https://www.onlinesbi.sbi/sbijava/sbcollectrevamp/hmpg_disclosure.html" target="_main" class="a6">Disclosure</a>
+     
+    &emsp; <a href="https://www.onlinesbi.sbi/sbijava/sbcollectrevamp/Terms_of_Use.html" target="_main" class="a7">Terms of Use</a>
+   </p>
+    </form>
+  </div>
+  <script src="loginjava.js">
+    
+  </script>
+  </body>
+</html>

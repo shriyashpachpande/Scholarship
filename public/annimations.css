@@ -1,0 +1,50 @@
+
+.nav3-box1, .nav3-box2 {
+    opacity: 0; /* Start hidden */
+    animation: slideInLeft 1s forwards; /* Animation for nav3-box1 and nav3-box2 */
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%); /* Start from the left */
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.nav3-box3, .nav3-box4 {
+    opacity: 0; /* Start hidden */
+    animation: slideInRight 1s forwards; /* Animation for nav3-box3 and nav3-box4 */
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%); /* Start from the right */
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Delay the animations for nav3-box1 and nav3-box2 */
+.nav3-box1 {
+    animation-delay: 0.5s; /* Delay for nav3-box1 */
+}
+
+.nav3-box2 {
+    animation-delay: 0.5s; /* Delay for nav3-box2 */
+}
+
+/* Delay the animations for nav3-box3 and nav3-box4 */
+.nav3-box3 {
+    animation-delay: 1s; /* Delay for nav3-box3 */
+}
+
+.nav3-box4 {
+    animation-delay: 1s; /* Delay for nav3-box4 */
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pre-Matric Scholarship - Page 1</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f7f7f7;
+}
+
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  max-width: 600px;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input, select {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+  </style>
+</head>
+<body>
+  <h2>Pre-Matric Scholarship Form - Page 1</h2>
+  <form id="page1Form">
+    <label>Full Name: <input name="fullName" required></label><br>
+    <label>Gender:
+      <select name="gender" required>
+        <option value="">Select</option><option>Male</option><option>Female</option><option>Other</option>
+      </select>
+    </label><br>
+    <label>Date of Birth: <input type="date" name="dob" required></label><br>
+    <label>Aadhar Number: <input name="aadharNumber" required></label><br>
+    <label>Religion: <input name="religion" required></label><br>
+    <label>Caste: <input name="caste" required></label><br>
+    <label>Category: 
+      <select name="category" required>
+        <option>SC</option><option>ST</option><option>OBC</option><option>General</option>
+      </select>
+    </label><br>
+    <label>Marital Status: <input name="maritalStatus" required></label><br>
+    <label>Disability: 
+      <select name="disability" required>
+        <option>No</option><option>Yes</option>
+      </select>
+    </label><br><br>
+    <h3>Address</h3>
+    <label>State: <input name="address[state]" required></label><br>
+    <label>District: <input name="address[district]" required></label><br>
+    <label>Pin Code: <input name="address[pin]" required></label><br>
+    <label>Village: <input name="address[village]" required></label><br>
+    <label>House Number: <input name="address[houseNumber]" required></label><br><br>
+
+    <button type="submit">Next</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>

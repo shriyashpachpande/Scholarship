@@ -1,0 +1,84 @@
+*{
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+.navbar{
+    height: 100px;
+    width: 100%;
+    background-color: #002D62;
+    display: flex;
+}
+.nav-schloarship{
+    height: 100px;
+    width: 25%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Schlor{
+    color:whitesmoke ;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main2{
+    height: 100px;
+    width: 75%;
+    background-color: rebeccapurple;
+    color: whitesmoke;
+    margin-right: 20px;
+}
+.search-contetnt{
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    background-color:burlywood;
+}
+.apply-onlinediv{
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: red;
+}
+.how-to{
+    background-color: blue;
+    width: 300px;
+}
+.user-manauals{
+    background-color: black;
+    width: 300px;
+}
+.navbar2,.navbar3{
+    height: 50px;
+    width: 100%;
+    background-color: #002D62;
+    display: flex;
+   
+}
+.items{
+    height: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home{
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+    color: whitesmoke;
+    transition: 0.3s;
+    
+}
+.home:hover{
+    transform: scale(1.1);
+    background-color: antiquewhite;
+    border-radius: 10%;
+    color: #002D62;
+}
+

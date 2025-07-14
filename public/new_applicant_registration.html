@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="loginformstyle.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="registration.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css.css">
+  <title>New Apllicant Registration</title>
+   <style>
+      #message{
+        font-weight: bold;
+      }
+      .match {
+      color: green;
+    }
+    .mismatch {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar1">
+    <div class="img-navbar">
+      <h1 style="font-size: 28PX;"> SCHOLARSHIP</h1>
+    </div>
+    <div class="navbar1-box1">
+      <p class="para1"><i class="fa-solid fa-square-phone fa-2xl"
+          style="color: #FFD43B; position: relative; top: 10px; "></i> &ensp;Helpline Number <br>&emsp;&emsp;
+        &emsp;88 3006 6800</p>
+    </div>
+    <div class="navbar1-box2">
+      <p class="para1"><i class="fa-solid fa-square-phone fa-2xl"
+          style="color: #FFD43B; position: relative; top: 10px; "></i> &ensp;Chief Minister Helpline <br>&emsp;&emsp;
+        &emsp;1800&nbsp;120&nbsp;&8040</p>
+    </div>
+    <div class="button-bar">
+      <a href="profile_perrsonal_information.html"><button class="profile"> Profile</button></a>
+    </div>
+  </div>
+  <!--Second navbar start-->
+  <div>
+    <div class="navbar2">
+
+      <div class="navbar2-box1">
+        <a href="index.html">
+          <p class="para6">
+            <i class="fa-solid fa-house"></i>&ensp;Home
+          </p>
+        </a>
+      </div>
+      <div class="navbar2-box2">
+        <a href="registration.html">
+          <p class="para6"><i class="fa-regular fa-pen-to-square"></i>
+            New Applicant <br> &ensp;&ensp; Registration
+          </p>
+        </a>
+      </div>
+      <div class="navbar2-box3">
+        <a href="login_form.html">
+          <p class="para6">
+            <i class="fa-solid fa-unlock"></i> &ensp;Applicant Login
+          </p>
+        </a>
+      </div>
+      <div class="navbar2-box4">
+        <a href="institue_dept_ddo.html">
+          <p class="para6">
+            <i class="fa-solid fa-building-columns"></i> &ensp;Institue / Dept <br>&ensp;&ensp;&ensp;&ensp;/ DDO Login
+          </p>
+        </a>
+      </div>
+      <div class="navbar2-box5">
+        <a href="Grievance_Suggestions.html">
+          <p class="para6">
+            &emsp;&ensp;<i class="fa-solid fa-comment-dots"></i> &ensp; Grievance &emsp;&emsp;&ensp;/ Suggestions
+          </p>
+        </a>
+      </div>
+      <div class="navbar2-box6">
+        &emsp;<p class="para6"><i class="fa-solid fa-file-lines"></i> &ensp; User Manuals</p>
+      </div>
+      <div class="navbar2-box7">
+        <a href="FAQ.html">
+          <p class="para6">
+            <i class="fa-regular fa-comments"></i>&ensp;FAQ
+          </p>
+        </a>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <br><br>
+
+  <div class="div7" style="margin-left: 5%;">
+
+
+    <form action="/entry_registration" method="post">
+      <br><br>
+      <table style="width: 100%;" class="table">
+        <caption><b style="font-size: 18px; color: rgb(4, 4, 36); font-family:sans-serif; letter-spacing: 1px;">New
+            Registration </b></caption>
+        <tr>
+          <th style="width: 20%;"></th>
+          <th style="width: 25%;"></th>
+          <th style="width: 25%;"></th>
+          <th style="width: 25%;"></th>
+        </tr>
+        <tr>
+          <td><b> Create ID :</b> </td>
+          <td><input type="text" placeholder="Student ID" name="studentID" id="studentID" class="page-1" required></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><b> Student Full Name :</b> </td>
+          <td><input type="text" placeholder="First Name " name="firstName" id="firstName" class="page-1" required></td>
+          <td><input type="text" placeholder="Middle Name" id="middleName" name="middleName" class="page-1" required>
+          </td>
+          <td><input type="text" placeholder="Last Name" id="lastName" name="lastName" class="page-1" required> </td>
+        </tr>
+        <tr>
+          <td><b>Create Your Username :</b></td>
+          <td><input type="text" placeholder="Username " id="username" class="page-1" name="username" /required></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><b> Mobile number :</b></td>
+          <td><input type="tel" placeholder=" 883 006 6800" maxlength="10" name="mobileNumber" required
+              id="mobileNumber" class="page-1"></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr style=" cursor: pointer;">
+          <td>
+            <label for="radio11">
+              &emsp;<input type="radio" value="Male" name="gender" id="Male" class="page "> <b>Male</b>
+            </label>
+          </td>
+          <td>
+            <label for="radio12">
+              &emsp;<input type="radio" value="Female" name="gender" id="Female" class="page"> <b>Female </b>
+            </label>
+          </td>
+          <td>
+            <label for="radio22">
+              &emsp;<input type="radio" value="Other" name="gender" id="Other" class="page"> <b>Other </b>
+            </label>
+          </td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td><b> Date of birth :</b></td>
+          <td><input type="date" placeholder="[DD/MM/YYYY]" id="dateOfBirth" name="dateOfBirth" class="page-1"></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td><b>Email Id :</b></td>
+          <td><input type="email" placeholder="xyzabc@gmail.com" name="email" required id="email" class="page-1"></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td><b>Password :</b> </td>
+          <td><input type="password" placeholder="Password" name="password" maxlength="5" class="page-1" required
+              id="password"></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><b> Confiom Password :</b> </td>
+          <td><input type="password" placeholder="Confiom Password" name="confirmPassword" maxlength="20" required id="confirmPassword"
+              class="page-1"> </td>
+          <td><div id="message"></div></td>
+          <td></td>
+        </tr>
+
+      </table>
+
+  </div>
+  <br><br><br>
+  <div class="div9">
+    <input type="checkbox" value="done" name="sp1" required><b>I have read and agreed to the terms and conditions</b>
+  </div>
+
+  <div class="button-main">
+    <div class="button-sub">
+      <a href="/login_form.html"><input type="button" value="Go Back" id="button" class="shriyash1"></a>
+    </div>&emsp;
+    <div>
+      <input type="reset" value="Reset" id="button" class="shriyash1">
+    </div>&emsp;
+    <div>
+      <input type="submit" value="Submit" id="button" class="shriyash1"></a>
+    </div>&emsp;
+  </div>
+
+  </form>
+  <script>
+    const password = document.getElementById('password');
+    const confirmPassword = document.getElementById('confirmPassword');
+    const message = document.getElementById('message');
+
+    confirmPassword.addEventListener('input', function () {
+      const pwdVal = password.value;
+      const confirmVal = confirmPassword.value;
+
+      if (confirmVal === "") {
+        message.textContent = "";
+        message.className = "";
+      } else if (pwdVal === confirmVal && pwdVal.length > 0) {
+        message.textContent = "✅ Password is confirmed!";
+        message.className = "match"; // green
+      } else if (pwdVal.startsWith(confirmVal)) {
+        message.textContent = "Typing... ❗";
+        message.className = "mismatch"; // red
+      } else {
+        message.textContent = "❌ Mismatch";
+        message.className = "mismatch"; // red
+      }
+    });
+  </script>
+</body>
+
+</html>

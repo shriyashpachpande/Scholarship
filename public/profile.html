@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Your Scholarship Profile</h2>
+  <div id="profileBox" style="background:#fff;padding:20px;border-radius:10px;max-width:600px;margin:auto;"></div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const appNumber = params.get('app');
+    
+    if (!appNumber) {
+      document.getElementById('profileBox').innerText = "No application number provided!";
+    } else {
+      fetch(`/api/profile/${appNumber}`)
+        .then(res => res.json())
+        .then(data => {
+          if (!data.success) return document.getElementById('profileBox').innerText = data.message;
+
+          const p = data.data;
+          document.getElementById('profileBox').innerHTML = `
+            <p><b>Application Number:</b> ${p.applicationNumber}</p>
+            <p><b>Full Name:</b> ${p.fullName}</p>
+            <p><b>Date of Birth:</b> ${p.dob}</p>
+            <p><b>Age:</b> ${p.age} years</p>
+            <p><b>Gender:</b> ${p.gender}</p>
+            <p><b>Religion:</b> ${p.religion}</p>
+            <p><b>Category:</b> ${p.category}</p>
+            <p><b>Address:</b> ${p.address.village}, ${p.address.district}, ${p.address.state} - ${p.address.pin}</p>
+          `;
+        }).catch(err => {
+          document.getElementById('profileBox').innerText = "Error loading profile.";
+          console.error(err);
+        });
+    }
+  </script>
+</body>
+</html>
