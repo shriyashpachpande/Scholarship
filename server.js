@@ -14,11 +14,13 @@ const grievanceRoute = require('./routes/grievance_suggestion.route');
 const instituteRegisterRoute = require('./routes/institue_dept_regisiter.route');
 const instituteDashboardRoute = require('./routes/institute_dashboard.route');
 
-
+//LV
 const app = express();
 const PORT = 5400;
 
-mongoose.connect('mongodb://localhost:27017/userDB', {
+// mongoose.connect('mongodb://localhost:27017/userDB', {
+  mongoose.connect('mongodb+srv://Scholarship:f1KBCf9pYp1VtOb6@scholarship.gridw0v.mongodb.net/Scholarship?retryWrites=true&w=majority', {
+
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => console.log("✅ MongoDB Connected"))
