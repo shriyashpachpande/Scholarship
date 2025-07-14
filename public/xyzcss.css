@@ -1,0 +1,25 @@
+*{
+    margin: 0%;
+}
+.navbar1{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+}
+.navabar1 ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+}
+.navbar1 li{
+    font-size: 20px;
+    margin: 0;
+    right: 5%;
+}
